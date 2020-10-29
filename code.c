@@ -8,6 +8,8 @@ int main() {
    n=10;
    for(int i = 0; i<n; i++){
       arr[i] = i%2;
+      if(i == n/2-1) arr[i]=3;
+      if(i==n/2) arr[i]=2;
    }
    while(count<n){
       printf("%d",arr[count]);
